@@ -1,11 +1,11 @@
 
 function getComputerChoice() {
-  let computerChoice = Math.floor(Math.random() * 100);
-  if (computerChoice < 33) {
+  let computerChoice = Math.floor(Math.random() * 3);
+  if (computerChoice === 0) {
     computerChoice = "rock";
     console.log("Rock!");
   }
-  else if (computerChoice > 66) {
+  else if (computerChoice === 1) {
     computerChoice = "paper";
     console.log("Paper!");
   }
