@@ -1,0 +1,10 @@
+body {
+    background-color: pink;
+}
+
+.buttons {
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: black;
+}

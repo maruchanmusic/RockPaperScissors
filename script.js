@@ -16,10 +16,14 @@ function getComputerChoice() {
  return computerChoice;
 }
 
-function getHumanChoice() {
-    let humanChoice = prompt("Rock, paper or scissors? Choose!").toLowerCase();
-    return humanChoice;
-}
+let btns = document.querySelectorAll('.buttons');
+btns.forEach(btn => {
+   btn.addEventListener('click', () => {
+    humanSelection = btn.textContent.trim().toLowerCase();
+    computerSelection = getComputerChoice();
+    playRound (humanSelection, computerSelection);
+   });  
+});
 
 let humanScore = 0;
 let computerScore = 0;
@@ -62,10 +66,6 @@ function playRound(humanSelection, computerSelection) {
             }
         }
     }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
 
 // function playGame() {   
 //    for(let i = 1; i <= 5; i++) {
@@ -87,3 +87,4 @@ else if (humanScore < computerScore) {
 else {
     console.log("It seems like it is a draw! Let's play again!")
 }
+
