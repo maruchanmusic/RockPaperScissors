@@ -2,9 +2,24 @@ body {
     background-color: pink;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
 .buttons {
     color: whitesmoke;
     font-weight: bold;
     border-radius: 10px;
+    background-color: black;
+}
+
+.results {
+    color: blue;
+    background-color: goldenrod;
+}
+
+.score {
+    color: blue;]
     background-color: black;
 }

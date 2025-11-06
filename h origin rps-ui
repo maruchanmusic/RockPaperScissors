@@ -1,0 +1,61 @@
+[33mcommit 9331b3c06bdc01e9b750009af5f7740688400e76[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mrps-ui[m[33m)[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Wed Nov 5 21:03:29 2025 +0900
+
+    make buttons event
+
+[33mcommit 41631ae20af94c07b9cee44bbc5adb9951350284[m[33m ([m[1;31morigin/rps-ui[m[33m)[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Wed Oct 15 20:32:15 2025 +0900
+
+    comment 5 round part
+
+[33mcommit 88891285f3b4012aa01c67e5e77531758994ef81[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: b3db4f3 f4f02b5
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Wed Oct 15 20:04:00 2025 +0900
+
+    Merge branch 'main' of github.com:maruchanmusic/Rock-Paper-Scissors
+
+[33mcommit b3db4f365c7d47fd677670bf57d2989a33557062[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Wed Oct 15 19:59:59 2025 +0900
+
+    Changes getComputerChoice function
+    
+    Changed the first line in the function.
+
+[33mcommit f4f02b52cd5a8b1f0f04d73ddcfb67a8107a524a[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Sun Jun 22 21:25:35 2025 +0900
+
+    Update README.md
+
+[33mcommit 3e1d37215202a58f41e269b177f4cda1daf0ff32[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Sun Jun 22 21:13:51 2025 +0900
+
+    Add playGame function
+    
+    playGame function plays 5 rounds and shows final results
+
+[33mcommit 398370f88a347001949ebf373b0d4e7a26474557[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Sat Jun 21 23:24:48 2025 +0900
+
+    Problem solved after correct syntax errors
+
+[33mcommit 011f388263d1ef4ffdbea37569341fb5b5d5e53b[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Sat Jun 21 23:05:16 2025 +0900
+
+    First commit
+    
+    First attempt to solve Rock, paer, scissors.
+    There are problems in the way the computer receive the input of the user yet.
+
+[33mcommit 6ab9dcb10f7f56a8ac6ba7af6f98537d4d597a77[m
+Author: maruchanmusic <189743388+maruchanmusic@users.noreply.github.com>
+Date:   Sat Jun 21 21:28:38 2025 +0900
+
+    first commit
