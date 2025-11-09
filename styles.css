@@ -5,21 +5,44 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    padding: 50px;
 
 }
 .buttons {
     color: whitesmoke;
     font-weight: bold;
     border-radius: 10px;
-    background-color: black;
+    background-color: lightseagreen;
+    font-size: 50px;
+    padding: 20px;
 }
+
+.buttonsContainer {
+    text-align: center;
+    padding: 50px;
+}
+
+.resultsContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 
 .results {
-    color: blue;
-    background-color: goldenrod;
+    color: whitesmoke;
+    background-color: red;
+    padding: 50px;
+    font-size: 20px;
+
 }
 
-.score {
-    color: blue;]
-    background-color: black;
+.winner {
+    color: black;
+    background-color: lightseagreen;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+
 }
