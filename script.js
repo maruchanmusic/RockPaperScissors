@@ -91,10 +91,8 @@ function playRound(humanSelection, computerSelection) {
 
 function stopGame() {
    const finalScore = document.querySelector(".winner");
-   finalScore.textContent = `Good game! You won ${humanScore} of 5 matches. `;
-   btns.forEach(btn => {
-        btn.removeEventListener('click', playRound);
-   });
+   finalScore.textContent = `Good game! You won ${humanScore} matches and the computer won ${computerScore} matches. `;
+   btns.forEach(btn => btn.disabled = true);
 
    if (humanScore > computerScore) {
     finalScore.textContent += "Congratulations. You are the winner!!!";
@@ -107,13 +105,4 @@ else if (humanScore == computerScore) {
 }
 
 };
-
-
-
-// function playGame() {   
-//    for(let i = 1; i <= 5; i++) {
-//      playRound(); 
-//      roundCount++;
-//    }
-// };
 
