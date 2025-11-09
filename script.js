@@ -15,20 +15,23 @@ function getComputerChoice() {
 
 let humanScore = 0;
 let computerScore = 0;
-let roundCount = 0;
+ 
 
 
 let btns = document.querySelectorAll('.buttons');
-btns.forEach(btn => {
-   btn.addEventListener('click', () => {
-    humanSelection = btn.textContent.trim().toLowerCase();
-    computerSelection = getComputerChoice();
-    playRound (humanSelection, computerSelection);
-    roundCount++;
-});
-   });  
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            humanSelection = btn.textContent.trim().toLocaleLowerCase();
+            computerSelection = getComputerChoice();
+            playRound (humanSelection, computerSelection);
+            if (humanScore == 5 || computerScore == 5) {
+                stopGame();
+            }
+        })
+    })
 
-
+   
+   
 function playRound(humanSelection, computerSelection) {
     if(humanSelection === "rock") {
         switch (computerSelection) {
@@ -86,19 +89,26 @@ function playRound(humanSelection, computerSelection) {
         }
     }
 
-const finalScore = document.querySelector(".winner");
-if (roundCount === 5) {
-finalScore.textContent = `Good game! You won ${humanScore} of 5 matches`;
-if (humanScore > computerScore) {
-    winner.textContent = "Congratulations. You are the winner!!!";
+function stopGame() {
+   const finalScore = document.querySelector(".winner");
+   finalScore.textContent = `Good game! You won ${humanScore} of 5 matches. `;
+   btns.forEach(btn => {
+        btn.removeEventListener('click', playRound);
+   });
+
+   if (humanScore > computerScore) {
+    finalScore.textContent += "Congratulations. You are the winner!!!";
 }
 else if (humanScore < computerScore) {
-    winner.textContent = "Sorry...you lost the game :( "
+    finalScore.textContent += "Sorry...you lost the game :( "
 }
 else if (humanScore == computerScore) {
-    winner.textContent = "It seems like it is a draw! Let's play again!";
+    finalScore.textContent += "It seems like it is a draw! Let's play again!";
 }
+
 };
+
+
 
 // function playGame() {   
 //    for(let i = 1; i <= 5; i++) {
