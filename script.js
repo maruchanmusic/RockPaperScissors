@@ -26,6 +26,7 @@ let btns = document.querySelectorAll('.buttons');
             playRound (humanSelection, computerSelection);
             if (humanScore == 5 || computerScore == 5) {
                 stopGame();
+                restartGame();
             }
         })
     })
@@ -106,3 +107,20 @@ else if (humanScore == computerScore) {
 
 };
 
+function restartGame() {
+    const restart = document.querySelector(".restart");
+    restart.textContent = "RESTART GAME";
+};
+
+const restartButton = document.querySelector(".restart");
+restartButton.addEventListener('click', () => {
+     humanScore = 0;
+    computerScore = 0;
+    const resultText = document.querySelector(".results");
+    const winnerText = document.querySelector(".winner");
+    resultText.textContent = "";
+    winnerText.textContent = "";
+    btns.forEach(btn => btn.disabled = false);  
+});
+
+   
